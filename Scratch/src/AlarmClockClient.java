@@ -15,16 +15,17 @@ class AlarmClockClient {
         AlarmClock clock3 = new AlarmClock();
 
         //clock1
-        clock1.snoozeInterval = 7;
+        clock1.setSnoozeInterval(7); //accessor method needed to implement value to private field
         clock1.snooze();
         System.out.println();
 
         //clock2
-        clock2.snoozeInterval = 10;
+        clock2.setSnoozeInterval(10);
         clock2.snooze();
         System.out.println();
         //clock3
         clock3.snooze();
+        System.out.println(clock3.toString());
 
     }
 }
